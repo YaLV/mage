@@ -110,7 +110,10 @@ class MySQL
         return $this->connection->query($query)->fetch_all(MYSQLI_ASSOC);
     }
 
-    public function save(): \mysqli_result
+    /**
+     * @return array|bool|\mysqli_result
+     */
+    public function save()
     {
         if (!$this->table) {
             return [];

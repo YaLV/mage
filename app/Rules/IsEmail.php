@@ -10,7 +10,7 @@ class IsEmail extends Validator
 {
     public $message = 'Value is not email address';
 
-    public function __construct(string $message = null): void
+    public function __construct(string $message = null)
     {
         $this->message = $message ?? $this->message;
     }

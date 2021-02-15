@@ -8,7 +8,7 @@ class NotEmpty extends Validator
 {
     public $message = 'Value should not be empty';
 
-    public function __construct(string $message = null): void
+    public function __construct(string $message = null)
     {
         $this->message = $message ?? $this->message;
     }

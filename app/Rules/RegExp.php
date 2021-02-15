@@ -12,7 +12,7 @@ class RegExp extends Validator
 
     private $expression = '/.*/';
 
-    public function __construct(string $expression, string $message = null): void
+    public function __construct(string $expression, string $message = null)
     {
         if (preg_match($expression, null) === false) {
             throw new \Exception('Invalid Regular expression supplied');
