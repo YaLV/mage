@@ -1,0 +1,450 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body, div.bg {
+    background-image: url('images/image_summer.png');
+    background-position: center;
+}
+
+div.row {
+    display: flex;
+    flex-direction: row;
+}
+
+div.clear {
+    clear: both;
+}
+
+div.logo {
+    background-image: url('images/ananas.svg');
+    width: 25px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    flex-basis: auto;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+ul li {
+    white-space: nowrap;
+}
+
+ul li a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+}
+
+div.nav ul li a:hover {
+    background: rgba(0, 0, 0, .05);
+}
+
+hr {
+    width: 80%;
+    border: 1px solid rgba(0,0,0,.05);
+}
+
+input[type=text] {
+    width: 100%;
+    border-left: 3px solid #4066A5 !important;
+    padding-left: 10px;
+    padding-right: 50px;
+}
+
+input[type=submit] {
+    margin-left: -45px;
+    height: 40px;
+    width: 40px;
+    background-image: url('images/arrow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 0 !important;
+    cursor: pointer;
+}
+
+div.subscribe {
+    margin-bottom: 10px;
+}
+
+div.error {
+    margin-left: calc(5%);
+    color:red;
+    z-index:1002;
+    background: rgb(255,255,255);
+    max-width: calc(80%);
+    white-space: normal;
+}
+
+.container div.error {
+    margin-left: 0;
+}
+
+.form-control.has-error input {
+    border: 1px solid red;
+}
+
+div.subscribe-input {
+    overflow-x: visible;
+    white-space: nowrap;
+    width: 100%;
+    z-index: 1000;
+}
+
+input {
+    background: white;
+    border: 1px solid #F2F5FA;
+    line-height: 40px;
+    outline-style: none;
+    z-index: 1001;
+}
+
+.subscribe-input:hover > input[type=text], input[type=text]:focus {
+    border-radius: 0;
+    outline-style: none;
+    box-shadow: 10px 20px 20px 10px rgba(0, 0, 0, .05);
+}
+
+input::placeholder {
+    color: rgba(0, 0, 0, .1);
+}
+
+input:hover::placeholder, input:focus::placeholder {
+    color: rgba(0, 0, 0, .5);
+}
+
+input[type=text]:focus {
+    border: 1px solid #4066A5;
+}
+
+form {
+    width: 100%;
+    padding: 20px 0;
+}
+
+ul.social .icon {
+    display: block;
+    background-image: url("images/social.svg");
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+ul.social .icon.fb {
+    background-position: 0 -20px;
+}
+
+ul.social .icon.insta {
+    background-position: 0 -116px;
+}
+
+ul.social .icon.twitter {
+    background-position: 0 -212px;
+}
+
+ul.social .icon.youtube {
+    background-position: 0 -308px;
+}
+
+ul.social .icon:hover {
+    background-position-x: -96px;
+    box-shadow: 0 30px 20px 10px rgba(0, 0, 0, .07);
+}
+
+ul.social .icon:visited {
+    background-position-x: -192px;
+    box-shadow: 0 30px 20px 10px rgba(0, 0, 0, .05);
+}
+
+div.bg, div.brand {
+    display: none;
+}
+
+div.nav {
+    width: 100%;
+    background: rgb(255, 255, 255);
+}
+
+.col-sm-1 {
+    width: 8.33%;
+}
+
+.col-sm-2 {
+    width: 16.66%;
+}
+
+.col-sm-3 {
+    width: 25%;
+}
+
+.col-sm-4 {
+    width: 33.33%;
+}
+
+.col-sm-5 {
+    width: 41.66%;
+}
+
+.col-sm-6 {
+    width: 50%;
+}
+
+.col-sm-7 {
+    width: 58.33%;
+}
+
+.col-sm-8 {
+    width: 66.66%;
+}
+
+.col-sm-9 {
+    width: 75%;
+}
+
+.col-sm-10 {
+    width: 83.33%;
+}
+
+.col-sm-11 {
+    width: 91.66%;
+}
+
+.col-sm-12 {
+    width: 100%;
+}
+
+.skip-sm-1 {
+    margin-left: 8.33%;
+}
+
+.skip-sm-2 {
+    margin-left: 16.66%;
+}
+
+.skip-sm-3 {
+    margin-left: 25%;
+}
+
+.skip-sm-4 {
+    margin-left: 33.33%;
+}
+
+.skip-sm-5 {
+    margin-left: 41.66%;
+}
+
+.skip-sm-6 {
+    margin-left: 50%;
+}
+
+.skip-sm-7 {
+    margin-left: 58.33%;
+}
+
+.skip-sm-8 {
+    margin-left: 66.66%;
+}
+
+.skip-sm-9 {
+    margin-left: 75%;
+}
+
+.skip-sm-10 {
+    margin-left: 83.33%;
+}
+
+.skip-sm-11 {
+    margin-left: 91.66%;
+}
+
+.skip-sm-12 {
+    margin-left: 100%;
+}
+
+div.logo-container {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+div.content {
+    background: rgb(255, 255, 255);
+    margin: calc(50% - 10%) auto auto auto;
+    width: 70%;
+    padding: 30px;
+}
+
+div.wrapper {
+    min-width: 440px;
+}
+
+@media only screen and (min-width: 600px) {
+    div.content {
+        background: rgb(255, 255, 255);
+        margin: 0;
+        width: 100%;
+        padding: 0;
+    }
+
+    ul:not(.social) {
+        padding-left: 50px;
+    }
+
+    div.logo-container {
+        margin-top: 5px;
+    }
+
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+
+    .skip-1 {
+        margin-left: 8.33%;
+    }
+
+    .skip-2 {
+        margin-left: 16.66%;
+    }
+
+    .skip-3 {
+        margin-left: 25%;
+    }
+
+    .skip-4 {
+        margin-left: 33.33%;
+    }
+
+    .skip-5 {
+        margin-left: 41.66%;
+    }
+
+    .skip-6 {
+        margin-left: 50%;
+    }
+
+    .skip-7 {
+        margin-left: 58.33%;
+    }
+
+    .skip-8 {
+        margin-left: 66.66%;
+    }
+
+    .skip-9 {
+        margin-left: 75%;
+    }
+
+    .skip-10 {
+        margin-left: 83.33%;
+    }
+
+    .skip-11 {
+        margin-left: 91.66%;
+    }
+
+    .skip-12 {
+        margin-left: 100%;
+    }
+
+    body, div.bg {
+        background-position: right;
+        background-size: cover;
+    }
+
+    div.brand {
+        font-weight: bold;
+        vertical-align: bottom;
+        height: 40px;
+        line-height: 50px;
+    }
+
+    div.container {
+        margin: auto;
+        width: 80%;
+        position: relative;
+    }
+
+    div.wrapper > .row {
+        height: 100%;
+    }
+
+    div.main-content {
+        min-width: 400px;
+        background: rgb(255, 255, 255);
+    }
+
+    div.wrapper {
+        height: 100%;
+        width: 100%;
+    }
+
+    div.nav {
+        margin-top: 70px;
+    }
+
+    div.header {
+        margin-top: 150px;
+    }
+
+    div.subscribe {
+        margin-right: -45px;
+        padding-left: 12%;
+    }
+    div.bg, div.brand {
+        display: inline;
+    }
+}

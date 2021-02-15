@@ -1,0 +1,20 @@
+{
+  "name": "ya/www",
+  "description": "Test job",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Ya",
+      "email": "ya.lvuser@gmail.com"
+    }
+  ],
+  "require": {
+    "ext-mysqli": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
+}
